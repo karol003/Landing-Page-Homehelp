@@ -1,0 +1,41 @@
+import Head from 'next/head';
+import styles from '../styles/Home.module.css';
+import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+
+
+
+const Inicio = () => {
+  
+  return (
+    <div className={styles.body}>
+      <section id="escolha" className={styles.escolha}>
+        <div className={styles.bemvindo}>
+          <Image src="/image/Component 2.png" alt="Logo" width={400} height={100}/>
+        </div>
+        <div>
+          <h1 className={styles.h1}>Escolha sua loja :</h1>
+        </div>
+        <div className={styles.baixo}>
+          <div className={styles.construbutton}>
+            <button className={styles.button}>
+              <Link href="/constru">
+                <Image ClassName={styles.img} src="/image/Component 5.png" alt="Constru" width={290} height={35}/>
+              </Link>
+            </button>
+          </div>
+          <div>
+            <button className={styles.button}>
+              <Link href="/merca">
+                <Image ClassName={styles.img} src="/image/Component 5 (1).png" alt="Merca" width={280} height={35}/>
+              </Link>
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Inicio;
