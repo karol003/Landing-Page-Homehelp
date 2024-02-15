@@ -29,6 +29,9 @@ const SuperMercado = ({ Component, pageProps }) => {
           margin: 0;
           padding: 0;
         }
+        html {
+          scroll-behavior: smooth;
+        }
       `}</style>
       
   
@@ -94,7 +97,7 @@ const SuperMercado = ({ Component, pageProps }) => {
 
           
         </section>
-
+        <section id='sobre'>
         <section className={styles.sobre}>
         <div className={styles.linha1}>
               <h4 className={styles.h4merca}>Por que escolher a HomeHelp?</h4>
@@ -145,7 +148,9 @@ const SuperMercado = ({ Component, pageProps }) => {
               </div>
               </div>
         </section>
+        </section>
 
+        <section id='contato'>
         <section className={styles.contato}>
             <div className={styles.txtfaixa}>
               <h1 className={styles.h1merca}>Entre em contato conosco!</h1>
@@ -172,6 +177,7 @@ const SuperMercado = ({ Component, pageProps }) => {
               </div>
               
             
+        </section>
         </section>
 
         <section className="rodape">
