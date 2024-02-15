@@ -800,6 +800,18 @@
 
 }
 
+.classeemerca {
+    position: relative;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}            
+
+.classee {
+    position: relative;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    }
+
 .contato button {
     text-align: center;
     font-size: 22px;

@@ -7,10 +7,10 @@ import { App } from 'next/app';
 
 
 const Inicio = () => {
+
   
   return (
 
-    
     <div className={styles.body}>
       <style jsx global>{`
         body {
@@ -45,6 +45,6 @@ const Inicio = () => {
       </section>
     </div>
   );
-};
+      };
 
 export default Inicio;
