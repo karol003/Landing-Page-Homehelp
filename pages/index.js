@@ -3,16 +3,25 @@ import styles from '../styles/Home.module.css';
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-
+import { App } from 'next/app';
 
 
 const Inicio = () => {
   
   return (
+
+    
     <div className={styles.body}>
+      <style jsx global>{`
+        body {
+          margin: 0;
+          padding: 0;
+        }
+      `}
+        </style>
       <section id="escolha" className={styles.escolha}>
         <div className={styles.bemvindo}>
-          <Image src="/image/Component 2.png" alt="Logo" width={400} height={100}/>
+          <Image src="/image/Component 2.png" alt="Logo" width={300} height={70}/>
         </div>
         <div>
           <h1 className={styles.h1}>Escolha sua loja :</h1>

@@ -48,3 +48,29 @@
 
 /* Estilos para a imagem */
 
+@media (max-width: 730px) {
+  .body {
+    flex-direction: column;
+  }
+
+  .bemvindo image {
+    width: 100px;
+  }
+.baixo {
+  margin-bottom: 100px;
+  display: block;
+}
+  .escolha {
+    flex-direction: column;
+  }
+
+  .button {
+    padding: 30px;
+  }
+  .construbutton {
+    position: relative;
+    bottom: 20px;
+    left: 5px;
+  }
+
+}
