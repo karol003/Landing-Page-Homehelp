@@ -9,6 +9,8 @@ import { App } from 'next/app';
 const Inicio = () => {
 
   
+  
+
   return (
 
     <div className={styles.body}>
@@ -29,14 +31,14 @@ const Inicio = () => {
         <div className={styles.baixo}>
           <div className={styles.construbutton}>
             <button className={styles.button}>
-              <Link href="/constru">
+              <Link href="/Construcao">
                 <Image ClassName={styles.img} src="/image/Component 5.png" alt="Constru" width={290} height={35}/>
               </Link>
             </button>
           </div>
           <div>
             <button className={styles.button}>
-              <Link href="/merca">
+              <Link href="/Supermercado">
                 <Image ClassName={styles.img} src="/image/Component 5 (1).png" alt="Merca" width={280} height={35}/>
               </Link>
             </button>
