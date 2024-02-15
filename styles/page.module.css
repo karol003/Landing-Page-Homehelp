@@ -1280,7 +1280,18 @@
     position: relative;
     right: 15px;
  }
- 
+ .classe {
+    position: relative;
+    right: 15px;
+    margin-top: -10px;
+    margin-bottom: -20px;
+ }
+ .classemerca {
+    position: relative;
+    right: 15px;
+    margin-top: -10px;
+    margin-bottom: -20px;
+ }
  .classee {
     position: relative;
     top: 3px;
