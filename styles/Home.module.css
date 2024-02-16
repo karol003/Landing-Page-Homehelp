@@ -37,7 +37,8 @@
   border: 3px solid transparent;
 }
 .button:hover {
-  background-color: #EEEFEF ;
+   
+  border-color: grey;
 }
 
 .h1 {
