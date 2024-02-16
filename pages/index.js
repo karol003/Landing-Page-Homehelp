@@ -13,6 +13,11 @@ const Inicio = () => {
 
   return (
 
+    <>
+    <Head>
+      <title>homehelp</title>
+    </Head>
+
     <div className={styles.body}>
       <style jsx global>{`
         body {
@@ -46,6 +51,7 @@ const Inicio = () => {
         </div>
       </section>
     </div>
+    </>
   );
       };
 

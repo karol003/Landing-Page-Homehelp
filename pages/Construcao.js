@@ -5,6 +5,7 @@ import { BsFillTelephoneFill, BsFillEnvelopeOpenFill, BsTwitterX, BsLinkedin, Bs
 import { FaTiktok } from "react-icons/fa";
 import React, { useState } from 'react';
 import { App } from 'next/app';
+import Head from 'next/head';
 
 const Construçao = ({ Component, pageProps }) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,7 +21,10 @@ const Construçao = ({ Component, pageProps }) => {
 
   return (
    
-    
+    <>
+    <Head>
+      <title>Material de construção</title>
+    </Head>
     
     <div className={styles.bori}>
 
@@ -201,7 +205,7 @@ const Construçao = ({ Component, pageProps }) => {
         </section>
       </main>
     </div>
-   
+    </>
   );
 };
 
