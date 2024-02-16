@@ -8,24 +8,32 @@ import { App } from 'next/app';
 
 const Construçao = ({ Component, pageProps }) => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(prevMenuOpen => !prevMenuOpen);
+  };
 
-    useEffect(() => {
-      document.title = "Materiais de construção";
-    }, []);
-
-  
- 
-  
-  
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
   };
 
   return (
    
     
+    
     <div className={styles.bori}>
+
+{isModalOpen && (
+          <div className={styles.modalOverlay}>
+            <div className={styles.modalContent}>
+              <span className={styles.closeButton} onClick={toggleModal}>&times;</span>
+              <h2>Em Breve! 🚀</h2>
+              <p>Estamos trabalhando duro para<br /> trazer o app para esta plataforma<br /> em breve! Fique ligado!</p>
+            </div>
+          </div>
+        )}
+
       <style jsx global>{`
         body {
           margin: 0;
@@ -84,20 +92,20 @@ const Construçao = ({ Component, pageProps }) => {
             </div>
           </div>
           <div className={styles.linkes}>
-            <div className={styles.linkplay}>
-             <a href="#demo-modal" className="link-googleplay"> <button>
-
-              <img className={styles.img} src="image/gugou.png" alt="Google Play" />
-              </button></a>
-            </div>
-            <div className={styles.linkapple}>
-             <a href="#demo-modal" className="link-applestore"> <button >
-            
-              <img className={styles.img} src="image/Apple_Store.png" alt="Apple store" />
-              </button></a>
-               </div>
+          <div className={styles.linkplay}>
+                <button className={styles.modalbuton} onClick={toggleModal}>
+                  <img className={styles.img} src="image/gugou.png" alt="Google Play" />
+                </button>
+              </div>
+              <div className={styles.linkapple}>
+                <button className={styles.modalbuton} onClick={toggleModal}>
+                  <img className={styles.img} src="image/Apple_Store.png" alt="Apple store" />
+                </button>
+              </div>
                </div>
                 </div>
+              
+      
 
       
           
@@ -196,4 +204,5 @@ const Construçao = ({ Component, pageProps }) => {
    
   );
 };
+
 export default Construçao;

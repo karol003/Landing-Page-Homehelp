@@ -9,21 +9,32 @@ import { App } from 'next/app';
 
 const SuperMercado = ({ Component, pageProps }) => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(prevMenuOpen => !prevMenuOpen);
-
-    useEffect(() => {
-      document.title = "SuperMercado";
-    }, []);
   };
-  
+
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+  };
   
 
   return (
    
     
     <div className={styles.bori}>
+
+{isModalOpen && (
+          <div className={styles.modalOverlay}>
+            <div className={styles.modalContent}>
+              <span className={styles.closeButton} onClick={toggleModal}>&times;</span>
+              <h2>Em Breve! 🚀</h2>
+              <p>Estamos trabalhando duro para<br /> trazer o app para esta plataforma<br /> em breve! Fique ligado!</p>
+            </div>
+          </div>
+        )}
+
       <style jsx global>{`
         body {
           margin: 0;
@@ -82,12 +93,12 @@ const SuperMercado = ({ Component, pageProps }) => {
           </div>
           <div className={styles.linkes}>
             <div className={styles.linkplaymerca}>
-             <a href="#" className="link-googleplay"> <button>
+             <a href="#" className="link-googleplay"> <button onClick={toggleModal}>
               <img className={styles.img} src="image/gugou.png" alt="Google Play" />
               </button></a>
             </div>
             <div className={styles.linkapplemerca}>
-             <a href="#" className="link-applestore"> <button>
+             <a href="#" className="link-applestore"> <button onClick={toggleModal}>
             
               <img className={styles.img} src="image/Apple_Store.png" alt="Apple store" />
               </button></a>
