@@ -1310,11 +1310,62 @@
     }
       }
       @media only screen and (min-width: 1025px) and (max-width: 1920px) {
-        .logo {
-            width: 170px;
-           margin-right: 80px;
+        .header {
+            text-align: start;
         }
+
+        .menupc li a {
+            text-align: start;
+            
+        }
+        .menupc .a {
+            margin-left: 50px;
+        }
+        .menupc  {
+          
+          width: 100%;
+        }
+
+        .header .a {
+            display: inline;
+        }
+
+        .logo {
+            margin-left: 40px;
+        }
+        .colunaone img {
+            position: relative;
+            left: 7%;
+            width: 250px;
+            margin-top: 70px;
+        }
+        .icon3 {
+            margin-left: -20px;
+        }
+
+        .icon4 {
+            margin-left: -20px;
+            position: relative;
+            top: 55px;
+        }
+
+        .escrito4 {
+            position: relative;
+            bottom: 30px;
+        }
+        .icon3merca {
+            margin-left: -20px;
+        }
+
+        .icon4merca {
+            margin-left: -20px;
+            position: relative;
+            top: 55px;
+        }
+
       }
+
+
 
       @media only screen and (min-width: 768px) and (max-width: 1024px) {
         .logo img{

@@ -1,3 +1,4 @@
+
 import styles from '../styles/page.module.css';
 import Link from 'next/link';
 import { BsFillTelephoneFill, BsFillEnvelopeOpenFill, BsTwitterX, BsLinkedin, BsFacebook, BsInstagram } from "react-icons/bs";
@@ -14,8 +15,13 @@ const Construçao = ({ Component, pageProps }) => {
     useEffect(() => {
       document.title = "Materiais de construção";
     }, []);
-  };
+
   
+ 
+  
+  
+  };
+
   return (
    
     
@@ -79,20 +85,21 @@ const Construçao = ({ Component, pageProps }) => {
           </div>
           <div className={styles.linkes}>
             <div className={styles.linkplay}>
-             <a href="#" className="link-googleplay"> <button>
+             <a href="#demo-modal" className="link-googleplay"> <button>
 
               <img className={styles.img} src="image/gugou.png" alt="Google Play" />
               </button></a>
             </div>
             <div className={styles.linkapple}>
-             <a href="#" className="link-applestore"> <button>
+             <a href="#demo-modal" className="link-applestore"> <button >
             
               <img className={styles.img} src="image/Apple_Store.png" alt="Apple store" />
               </button></a>
-            </div>
-          </div>
-          </div>
+               </div>
+               </div>
+                </div>
 
+      
           
         </section>
         <section id='sobre'>
@@ -188,6 +195,5 @@ const Construçao = ({ Component, pageProps }) => {
     </div>
    
   );
-
 };
 export default Construçao;
