@@ -29,8 +29,8 @@ const SuperMercado = ({ Component, pageProps }) => {
           <div className={styles.modalOverlay}>
             <div className={styles.modalContent}>
               <span className={styles.closeButton} onClick={toggleModal}>&times;</span>
-              <h2>Em Breve! 🚀</h2>
-              <p>Estamos trabalhando duro para<br /> trazer o app para esta plataforma<br /> em breve! Fique ligado!</p>
+              <h2>Aplicativo homehelp em desenvolvimento!</h2>
+              <p>Nosso aplicativo estará disponível em breve!<br /> Para acesso a versão beta entre em contato. </p>
             </div>
           </div>
         )}
