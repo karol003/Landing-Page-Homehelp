@@ -24,7 +24,8 @@
 
 .logo {
     width: 170px;
-   margin-right: 40px;
+   margin-left: 40px;
+   
 }
 
 .logo img{
@@ -38,7 +39,7 @@
 .header{
     width: 100%;
     height: 100px;
-    text-align: end;
+    text-align: center;
     font-weight: 540;
     font-size: 20px;
     background-color:  rgba(73, 64, 64, 0.027);
@@ -48,7 +49,7 @@
 .header .a {
     color: #212C2D;
     text-decoration: none;
-    display: inline-block;
+    display: inline;
 }
 
 .menupc ul li { display: inline ; 
@@ -65,13 +66,13 @@
     cursor: pointer;
 }
 .menupc {
+    position: relative;
+    left: 100px;
     width: 70%;
-    margin-right: 15%;
-    margin-left: 0%;
-    height: 100%;
+    height: 100px;
     align-items: center;
     display: inline-flex;
-    justify-content: start;
+    justify-content: center;
     
 }
 .menupc .a:hover{
@@ -1309,7 +1310,7 @@
         text-align: center;
     }
       }
-      @media only screen and (min-width: 1025px) and (max-width: 1920px) {
+      @media only screen and (min-width: 1025px) and (max-width: 1320px)  {
         .header {
             text-align: start;
         }
@@ -1331,7 +1332,7 @@
         }
 
         .logo {
-            margin-left: 40px;
+            margin-left: -40px;
         }
         .colunaone img {
             position: relative;
@@ -1401,7 +1402,7 @@
             cursor: pointer;
             margin-right: 20px;
             position: relative;
-            
+            left: 300px;
            
         }
     
