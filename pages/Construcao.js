@@ -28,15 +28,16 @@ const Construçao = ({ Component, pageProps }) => {
     
     <div className={styles.bori}>
 
-{isModalOpen && (
-          <div className={styles.modalOverlay}>
-            <div className={styles.modalContent}>
-              <span className={styles.closeButton} onClick={toggleModal}>&times;</span>
-              <h2> Aplicativo homehelp em desenvolvimento!</h2>
-              <p>Nosso aplicativo estará disponível em breve! <br /> Para acesso a versão beta entre em contato. </p>
-            </div>
-          </div>
-        )}
+    {isModalOpen && (
+  <div className={styles.modalOverlay} onClick={toggleModal}>
+    <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
+      <span className={styles.closeButton} onClick={toggleModal}>&times;</span>
+      <h2> Aplicativo homehelp em desenvolvimento!</h2>
+      <p>Nosso aplicativo estará disponível em breve! <br /> Para acesso a versão beta entre em contato. </p>
+    </div>
+  </div>
+)}
+
 
       <style jsx global>{`
         body {
