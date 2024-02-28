@@ -45,6 +45,11 @@ const SuperMercado = ({ Component, pageProps }) => {
           margin: 0;
           padding: 0;
         }
+        @media (prefers-color-scheme: dark) {
+          body {
+            background-color:#EEEFEF ;
+              }
+          }
         html {
           scroll-behavior: smooth;
         }

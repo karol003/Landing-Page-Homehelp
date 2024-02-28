@@ -24,6 +24,11 @@ const Inicio = () => {
           margin: 0;
           padding: 0;
         }
+        @media (prefers-color-scheme: dark) {
+          body {
+            background-color:#EEEFEF ;
+              }
+          }
       `}
         </style>
       <section id="escolha" className={styles.escolha}>

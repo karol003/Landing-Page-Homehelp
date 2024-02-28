@@ -45,6 +45,11 @@ const Construçao = ({ Component, pageProps }) => {
           padding: 0;
           
         }
+        @media (prefers-color-scheme: dark) {
+          body {
+            background-color:#EEEFEF ;
+              }
+          }
         html {
           scroll-behavior: smooth;
         }
