@@ -25,7 +25,7 @@ const SuperMercado = ({ Component, pageProps }) => {
 
     <>
     <Head>
-      <title>SuperMercado</title>
+      <title>Supermercado</title>
     </Head>
     <div className={styles.bori}>
 
