@@ -26,7 +26,7 @@ const Inicio = () => {
         }
         @media (prefers-color-scheme: dark) {
           body {
-            background-color:#EEEFEF ;
+            background-color:#EEEFEF !important;
               }
           }
       `}

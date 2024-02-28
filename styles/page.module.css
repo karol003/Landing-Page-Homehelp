@@ -40,6 +40,18 @@
 .body {
     margin: 0 !important; 
 }
+
+@media (prefers-color-scheme: dark) {
+    .body {
+      background-color:#EEEFEF !important ;
+        }
+
+        .bori {
+            background-color:#EEEFEF !important ;
+        }
+    }
+
+
 .bori {
     background: #EEEFEF;
     font-family: "Rubik", Sans-serif;
