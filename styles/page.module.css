@@ -67,22 +67,19 @@
 
 .logo {
     width: 170px;
-   margin-left: 40px;
-   
+  margin: auto;
 }
 
 .logo img{
    width: 170px;
-    margin:0%;
-    text-align: start;
-   align-items: start;
-   justify-content: start;
+    margin:auto;
+    
 }
 
 .header{
     width: 100%;
     height: 100px;
-    text-align: center;
+   margin: auto;
     font-weight: 540;
     font-size: 20px;
     background-color:  rgba(73, 64, 64, 0.027);
@@ -93,29 +90,43 @@
     color: #212C2D;
     text-decoration: none;
     display: inline;
+    margin: auto;
+    
+    
 }
 
 .menupc ul li { display: inline ; 
    }
 
 .menupc li a{
-    text-align: end;
-    display: inline;
-    align-items: end;
     
+    display: inline;
+  
+    margin: auto;
 }
 .menupc .a {
     margin-left: 50px;
     cursor: pointer;
+    width: 60%;
+    margin-right: auto;
+
 }
+
+.menupc .logo {
+    width: 40%;
+    margin: auto;
+    text-align: start;
+}
+
 .menupc {
     position: relative;
-    left: 100px;
-    width: 70%;
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 15%;
     height: 100px;
     align-items: center;
     display: inline-flex;
-    justify-content: center;
+    
     
 }
 .menupc .a:hover{
@@ -142,17 +153,10 @@
 .menupc .am {
     margin-left: 50px;
     cursor: pointer;
+    width: 60%;
+    margin-right: auto;
 }
-.menupc {
-    width: 70%;
-    margin-right: 15%;
-    margin-left: 0%;
-    height: 100%;
-    align-items: center;
-    display: inline-flex;
-    justify-content: start;
-    
-}
+
 .menupc .am:hover{
     transition: all 0.4s ease;
      color:#0CAC1F;
@@ -1730,11 +1734,11 @@
 
       }
 
-      @media screen and (max-width: 1920px) {
+      @media screen and (max-width: 1920px ) {
 
         .logo {
             width: 170px;
-           margin-right: 430px;
+           
         }
 
       }
